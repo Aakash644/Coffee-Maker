@@ -1,3 +1,4 @@
+from os import system
 logo='''
  _____          __   __             ___  ___        _               
 /  __ \        / _| / _|            |  \/  |       | |              
@@ -50,7 +51,8 @@ reserve = {"water": 3000, "milk": 3000, "coffee": 1000,
 drink = {"cappucino": {"ingredients": {"water": 20, "milk": 120, "coffee": 30, "vanilla": 0, "hazelnut": 0, "caramel": 0}, "cost": 99}, "latte": {"ingredients": {"water": 20, "milk": 140, "coffee": 30, "vanilla": 0, "hazelnut": 0, "caramel": 0}, "cost": 149}, "espresso": {"ingredients": {"water": 120, "milk": 0, "coffee": 60, "vanilla": 0, "hazelnut": 0, "caramel": 0},
     "cost": 179}, "caramel frappe": {"ingredients": {"water": 20, "milk": 120, "coffee": 60, "vanilla": 0, "hazelnut": 0, "caramel": 30}, "cost": 149}, "vanilla frappe": {"ingredients": {"water": 100, "milk": 120, "coffee": 30, "vanilla": 30,"hazelnut": 0, "caramel": 0}, "cost": 159}, "hazelnut frappe": {"ingredients": {"water": 120, "milk": 120, "coffee": 30, "vanilla": 0, "hazelnut": 30,"caramel": 0 }, "cost": 169}}
 
-while(1):
+while(1): 
+    system("cls")
     print(logo)  
    
     choice=int(input("Hello, what would you like to have ?\n1.Hot Coffee\n2.Cold Coffee\n3.Report\n4.exit\n")) 
